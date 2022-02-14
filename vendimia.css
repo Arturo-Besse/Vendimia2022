@@ -1,0 +1,166 @@
+body{
+    /* color: #FFF; */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFC94D;
+    background-image: url('fondeverdadero.jpg');
+    background-repeat: no-repeat;
+    
+}
+#header {
+    display: block;
+    /* background-image: url('vendimia.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFF;
+    font-size: 60px; 
+    min-height:150px;
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* #subheader{
+    display: block; background-color:#89105c; color:#FFF; padding: 10px; font-size: 30px;
+} */
+#carousel{
+    display: block;
+}
+#footer {
+    display: block;
+    background-image: url('fondovendimia.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFF;
+    background-size: cover;
+    color: #fff;
+    height: 30px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.f{
+    display: inline-block;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    /*transform: scale(0.5);*/
+    text-align: center;
+    overflow: hidden;
+}
+.f img{
+    float: left;
+    transition: 0.5s ease-in-out;
+    margin: 0px;
+    width: 240px;
+}
+.maximizado img{
+    margin: 50px;
+}
+body,*{
+    cursor:none;
+}
+.distrito{
+    /* color: white;  */
+    background-image: url('Vendimia2022.jpg');
+    transition: 0.5s ease-in-out;
+    /* background-color:#daa000; */
+    display: inline-block;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top:0;
+    left:0;
+    font-size: 18px;
+    width: 241px;
+    z-index: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.maximizado .distrito{
+    left: 50px;
+    top: 369px;
+}
+.anterior .distrito,.siguiente .distrito{
+    transform: rotate(-90deg);
+    left: -113px;
+    top: 109px;
+    height: 85px;
+    width: 325px;
+    padding-top: 15px;
+}
+.siguiente .distrito{
+    transform: rotate(90deg);
+}
+.nombre,.datos,.f div img{
+    display: block;
+    text-align: left;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.maximizado .nombre,.maximizado .datos , .maximizado div img{
+    opacity: 1;
+}
+.nombre{
+    font-size: 30px;
+}
+.datos{
+    font-size: 20px;
+}
+.maximizado>div>img{
+    margin: 100px;
+}
+.confirmar {
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    left: 390px;
+    top: 240px;
+    border: solid 1px;
+    padding: 50px;
+    font-size: 25px;
+}
+.confirmar .si, .confirmar .no{
+    display: inline-block;
+    width: 241px;
+    margin: 70px 4px;
+}
+.label{
+    display: inline-block;
+    font-size: 20px;
+}
+.dni{
+    font-size: 20px;
+    height: 30px;
+}
+.teclado{
+    width: 210px;
+    text-align: center;
+    display:inline-block;
+}
+.teclado div{
+    border: 1px solid black;
+    background-color: white;
+    float: right;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
+.teclado div.cancelar,.teclado div.aceptar{
+    color: white;
+    width: 186px;
+}
+.teclado div.cancelar{
+    background-color: red;
+}
+.teclado div.aceptar{
+    background-color: green;
+}
+/*
+#89105c;
+#910661;
+ */

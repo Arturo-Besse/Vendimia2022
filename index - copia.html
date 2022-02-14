@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>Vendimia 2022 - Elección de la Reina de Mendoza</title>
+	<meta name="description" content="" />
+</head>
+<body>
+<select id="x">
+<option value="0">0</option>
+<option value="10">10</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="150">150</option>
+<option value="200">200</option>
+<option value="250">250</option>
+<option value="300">300</option>
+<option value="350">350</option>
+<option value="400">400</option>
+<option value="450">450</option>
+<option value="500">500</option>
+</select>
+<script type="application/javascript">
+document.getElementById('x').onchange=function(){
+if(confirm('Se va a imprimir un voto para '+(false?'':'la candidata de ')+this.value)){
+		var httpRequest = new XMLHttpRequest();
+		if (!httpRequest) {
+			alert('Giving up :( Cannot create an XMLHTTP instance');
+			return false;
+		}
+		httpRequest.onreadystatechange = function(a,b){
+			console.log([a,b]);
+		};
+		httpRequest.open('GET', 'imprimir2.php?r='+this.value+'&x='+this.value+'&y='+this.value);
+		httpRequest.send();
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#header {
+    display: block;
+    background-color: #a4228f;
+    background-image: url('img/Godoy Cruz.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 30px;
+    color: #FFC94D;
+    padding: 10px;
+    font-size: 50px;
+}
+#subheader{
+    display: block; background-color:#881477; color:#FFC94D; padding: 10px; font-size: 30px;
+}
+#footer {
+    display: block;
+    background-color: #a4228f;
+    color: #FFF;
+    height: 50px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.demo-frame header, .demo-frame h1, .demo-frame .demo-conversion {
+    display: none;
+}
+
+.demo-wrapper {
+    min-height: 500px;
+}
+
+.bsap {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#carousel {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#carousel figure {
+    margin: 0
+}
+.react-3d-carousel {
+    width: 800px;
+    height: 394px;
+    position: relative;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.react-3d-carousel .carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.react-3d-carousel .carousel  figure {
+    display: block;
+    position: absolute;
+    width: 800px;
+    height: 394px;
+    left: 10px;
+    top: 10px;
+    border: 2px solid black;
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FFC94D;
+    text-align: center;
+}
+
+.react-3d-carousel .carousel figure {
+    background: hsla( 160, 100%, 50%, 0.8);
+}
+
+#carousel table {
+    margin: 40px 0;
+    width: 800px;
+}
+
+.react-3d-carousel   .prev {
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.react-3d-carousel   .prev:before {
+    content: url("img/chevron_left_white.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 43px;
+    height: 49px;
+    margin: auto;
+}
+
+.react-3d-carousel  .next {
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    top: 0px;
+    right: -5px;
+    z-index: 1000;
+}
+.react-3d-carousel  .next:before
+{
+    content: url("img/chevron_right_white.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 43px;
+    height: 49px;
+    margin: auto;
+}
+.carousel figure div a{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 100px;
+    top:-170px;
+}
+#carousel select{
+    position: relative;
+    top: 100px;
+}
